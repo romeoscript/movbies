@@ -2,13 +2,12 @@ import React from "react";
 import Image from "next/image";
 import profile from "../images/profile_image.png";
 import { NotificationsOutlined } from "@mui/icons-material";
+import Sidebar from "./Sidebar";
 
 const Homepage = () => {
   return (
     <div className="flex min-h-[100vh] bg-[#7B7B7B]">
-      <div className="w-[226px] bg-[#212121] text-white  rounded-r-[45px] fixed h-full">
-        sidebar
-      </div>
+     <Sidebar />
       <div className="w-[calc(100%_-_226px)] ml-[226px] ">
 
         <div className="flex justify-between p-[1rem]">
