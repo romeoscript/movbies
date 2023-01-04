@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
       <Sidebar />
       <div className="w-[calc(100%_-_226px)] ml-[226px] ">
         <Navbar />
-        mainbar
         {children}
       </div>
     </div>
