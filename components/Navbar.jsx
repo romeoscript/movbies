@@ -10,7 +10,7 @@ const Navbar = () => {
         <input
           type="search"
           placeholder="Search for movies, TV shows..."
-          className="w-full p-[0.4rem] rounded-[30px] outline-none "
+          className="w-full p-[0.4rem] rounded-[30px] outline-none bg-[#212121]"
         />
       </aside>
       <aside className="flex items-center">
