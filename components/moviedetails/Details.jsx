@@ -25,13 +25,33 @@ const Details = () => {
         <p className="text-white">
           After thirty years, Maverick is still pushing the envelope as a top
           naval aviator, but must confront ghosts of his past when he leads TOP
-          GUN&apos;s elite graduates on a mission that demands the ultimate sacrifice
-          from those chosen to fly it.
+          GUN&apos;s elite graduates on a mission that demands the ultimate
+          sacrifice from those chosen to fly it.
         </p>
-        <p className="border-b-2 border-b-gray-200 text-white p-2">Director: <span className="text-[#3DD2CC]">romeoscript</span></p>
-        <p className="border-b-2 border-b-gray-200 text-white p-2">Writer: <span className="text-[#3DD2CC]">romeoscript</span></p>
-        <p className="border-b-2 border-b-gray-200 text-white p-2">Stars: <span className="text-[#3DD2CC]">romeoscript</span></p>
+        <p className="border-b-2 border-b-gray-200 text-white p-2">
+          Director: <span className="text-[#3DD2CC]">romeoscript</span>
+        </p>
+        <p className="border-b-2 border-b-gray-200 text-white p-2">
+          Writer: <span className="text-[#3DD2CC]">romeoscript</span>
+        </p>
+        <p className="border-b-2 border-b-gray-200 text-white p-2">
+          Stars: <span className="text-[#3DD2CC]">romeoscript</span>
+        </p>
         {/* <p className="border-b-2 border-b-gray-200  p-2">Director: <span>romeoscript</span></p> */}
+
+        <div className="relative my-4 mb-[2rem]">
+          <input
+            type="button"
+            value="Top rated movie #65"
+            className="w-[25%] h-[40px] bg-[#3DD2CC] text-white rounded-xl absolute left-0 cursor-pointer"
+          />
+          <select
+            name=""
+            className="w-full h-[40px] pl-[11rem] p-2 rounded-xl text-white outline-none bg-[#121212]"
+          >
+            <option value="#">Awards 9 nominations</option>
+          </select>
+        </div>
       </aside>
       <aside>
         <div className="flex items-center ">
