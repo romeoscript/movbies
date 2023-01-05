@@ -4,10 +4,12 @@ import {
   Star,
   Share,
 } from "@mui/icons-material";
+import Image from "next/image";
+import triple from "../../images/Rectangle 37.png";
 
 const Details = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between gap-[2%]">
       <aside className="basis-[65%]">
         <div className="text-white flex items-center my-6 gap-3">
           <h2>Topgon:Maverick</h2>
@@ -53,8 +55,8 @@ const Details = () => {
           </select>
         </div>
       </aside>
-      <aside>
-        <div className="flex items-center ">
+      <aside className="p-[2rem]">
+        <div className="flex items-center w-full">
           <FavoriteBorder className="text-white mx-2 cursor-pointer" />
           <Share className="text-white mx-2 cursor-pointer" />
           <BookmarkBorder className="text-white mx-2 cursor-pointer" />
@@ -62,6 +64,17 @@ const Details = () => {
           <p className="text-white mx-4">
             <span className="text-2xl font-bold">8.5</span>/ <span>350k</span>
           </p>
+        </div>
+        <div className="text-white">
+          <button className="w-full bg-[#3DD2CC] p-[0.5rem] rounded-lg my-2">
+            She Showtimes
+          </button>
+          <button className="w-full bg-[#121212] p-[0.5rem] rounded-lg my-2">
+            More Watch Options
+          </button>
+        </div>
+        <div className=" w-full h-[200px]">
+          <Image src={triple} alt="done" className="w-full h-full object-cover rounded-lg my-4" />
         </div>
       </aside>
     </div>
