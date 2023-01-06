@@ -1,6 +1,14 @@
-const LoginAuth = () => {
+import Regbutton from "./Regbutton";
+
+const RegForm = () => {
   return (
     <form action="">
+      <input
+        type="text"
+      
+        placeholder="Name"
+        className="bg-transparent outline-none w-full p-2 border-b-[1px] mt-3"
+      />
       <input
         type="email"
         placeholder="please enter your email address"
@@ -9,25 +17,19 @@ const LoginAuth = () => {
 
       <input
         type="password"
-        placeholder="please enter your password"
+        placeholder="password"
         className="bg-transparent outline-none w-full p-2 border-b-[1px] mt-3"
       />
-      <div className="flex justify-between my-2">
-        <p className="text-[12px]">
-          <input type="checkbox" name="" id="" className="mx-2" />
-          Remember me for 30 days
-        </p>
-        <p className="text-[10px]">Forgot Password</p>
-      </div>
+
       <button className="rounded-lg bg-white p-[0.5rem] m-auto my-[1rem] w-full text-black">
-        Log in
+        Create account
       </button>
+      <Regbutton />
       <p className="text-[12px]">
-        Don’t have an account ?{" "}
-        <span className="font-bold">Sign up for free</span>{" "}
+        Already have an account ? <span className="font-bold">Log in</span>{" "}
       </p>
     </form>
   );
 };
 
-export default LoginAuth;
+export default RegForm;
