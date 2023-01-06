@@ -16,3 +16,6 @@
     @apply transform scale-150 text-opacity-0;
   }
 }
+#bg-info {
+ background-color: rgb(255, 255, 255) !important;
+}
