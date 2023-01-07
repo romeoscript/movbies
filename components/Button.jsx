@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({button}) => {
   return (
-    <button className="flex items-center rounded-lg border-2 p-[0.5rem] m-auto my-[1.5rem] w-full justify-center">
+    <button className="flex items-center rounded-lg border-2 p-[0.5rem] m-auto my-[1.5rem] w-full justify-center" onClick={()=> button()}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="20"
