@@ -1,10 +1,6 @@
 import Image from "next/image";
 import logo from "../images/Vector.png";
 import avatar from "../images/Rectangle 1.png";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import LoginAuth from "../components/LoginAuth";
-import { Star } from "@mui/icons-material";
-import Button from "../components/Button";
 import RegForm from "../components/RegForm";
 
 const Registration = () => {
@@ -16,6 +12,24 @@ const Registration = () => {
           alt="avatar"
           className="absolute w-full h-full object-cover"
         />
+        <div className="absolute bottom-[20%] left-[5%]">
+          <h2 className="text-2xl font-bold">
+            {" "}
+            Benefits of your free IMDb account
+          </h2>
+
+          <p className="mt-4">Personalized Recommendations</p>
+          <p>Discover shows you&#39;ll love.</p>
+
+          <p className="mt-4">Your Ratings</p>
+          <p>Rate and remember everything you&#39;ve seen.</p>
+
+          <p className="mt-4">Contribute to IMDb</p>
+          <p>
+            Add data that will be seen by millions of people and get cool
+            badges.
+          </p>
+        </div>
       </aside>
       <aside className="basis-[45%]">
         <Image src={logo} alt="logo" width={90} height={33} className="m-4" />
@@ -23,7 +37,7 @@ const Registration = () => {
         <div className="w-[60%] m-auto  text-center p-4">
           <h2 className="mt-4 font-bold text-[25px]">Create an account </h2>
           <p className="text-[14px] mb-[2rem] mt-2">
-            Let’s get started with your 30 days free trial.
+            Let&#39;s get started with your 30 days free trial.
           </p>
           <RegForm />
         </div>

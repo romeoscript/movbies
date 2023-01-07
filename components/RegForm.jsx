@@ -11,7 +11,7 @@ const RegForm = () => {
       />
       <input
         type="email"
-        placeholder="please enter your email address"
+        placeholder="Email"
         className="bg-transparent outline-none w-full p-2 border-b-[1px] mt-3"
       />
 
