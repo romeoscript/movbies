@@ -7,7 +7,8 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import LoginAuth from "../components/LoginAuth";
 import { Star } from "@mui/icons-material";
 import Button from "../components/Button";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
+import Home from ".";
 
 const Login = () => {
   const { data: session } = useSession();
@@ -41,7 +42,11 @@ const Login = () => {
     setCurrentIndex(newIndex);
   };
   if (session) {
-    return <div>welcome {session.user.name}</div>;
+    return (
+      <div>
+        <Home />
+      </div>
+    );
   } else {
     return (
       <div className="bg-[#191919] text-white h-[100vh] flex ">
