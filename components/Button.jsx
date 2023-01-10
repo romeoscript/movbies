@@ -1,8 +1,12 @@
+import Google from "next-auth/providers/google";
 import React from "react";
 
-const Button = ({button}) => {
+const Button = ({ signed }) => {
   return (
-    <button className="flex items-center rounded-lg border-2 p-[0.5rem] m-auto my-[1.5rem] w-full justify-center" onClick={()=> button()}>
+    <button
+      className="flex items-center rounded-lg border-2 p-[0.5rem] m-auto my-[1.5rem] w-full justify-center"
+      onClick={() => signed()}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="20"

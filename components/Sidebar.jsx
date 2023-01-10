@@ -7,10 +7,12 @@ import { MdOndemandVideo } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { RiLogoutBoxRLine } from "react-icons/ri";
 import { FaTicketAlt } from "react-icons/fa";
+import {  signOut } from "next-auth/react";
 
 const Sidebar = () => {
+  
   return (
-    <div className="w-[226px] bg-[#212121] flex flex-col items-center text-white  rounded-r-[45px] fixed h-full py-[1rem]">
+    <div className="w-[226px] bg-[#212121] flex flex-col items-center text-white  rounded-r-[45px] fixed h-full py-[1rem]"  onClick={() => signOut()}>
       <Image
         src={logo}
         alt="logo"
@@ -38,11 +40,15 @@ const Sidebar = () => {
           <h4 className="12px">Play movie quizes and earn free tickets</h4>
           <p className="text-[10px]">50k people are playing now</p>
           <aside className="w-full text-center mt-5">
-          <button className="bg-[#3DD2CC] text-[12px] p-[0.3rem] rounded-[38px] ">Start Playing</button>
-       
+            <button className="bg-[#3DD2CC] text-[12px] p-[0.3rem] rounded-[38px] ">
+              Start Playing
+            </button>
           </aside>
-           </li>
-        <li className="flex items-center text-[15px] py-[1rem] pl-[2rem] ">
+        </li>
+        <li
+          className="flex items-center text-[15px] py-[1rem] pl-[2rem] cursor-pointer"
+         
+        >
           <RiLogoutBoxRLine className="text-left" />{" "}
           <span className="mx-[0.8rem]">Log out</span>
         </li>
