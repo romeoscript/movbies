@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import Layout from "../components/Layout";
-import Hero from "../components/moviedetails/Hero";
-import Details from "../components/moviedetails/Details";
+import Layout from "../../components/Layout";
+import Hero from "../../components/moviedetails/Hero";
+import Details from "../../components/moviedetails/Details";
 
 const inter = Inter({ subsets: ["latin"] });
 

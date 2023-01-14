@@ -1,10 +1,11 @@
 import Image from "next/image";
-import housedragon from "../images/Rectangle 17.png";
-import topgon from "../images/Rectangle 18.png";
-import nope from "../images/Rectangle 19.png";
+// import housedragon from "../images/Rectangle 17.png";
+// import topgon from "../images/Rectangle 18.png";
+// import nope from "../images/Rectangle 19.png";
 import dreams from "../images/Rectangle 20.png";
 
-const List = ({name}) => {
+const List = ({ name, movieList }) => {
+  console.log(movieList);
   return (
     <div>
       <aside className="flex justify-between px-[0.4rem] mt-[1rem]">
@@ -14,18 +15,18 @@ const List = ({name}) => {
 
       {/* videos lists starts here */}
       <div className="flex justify-between my-[1rem]">
-        <aside className="w-[150px] h-[200px] rounded-[20px]">
-          <Image src={housedragon} alt="movie" className="w-full h-full " />
-        </aside>
-        <aside className="w-[150px] h-[200px] rounded-[20px]">
-          <Image src={topgon} alt="movie" className="w-full h-full " />
-        </aside>
-        <aside className="w-[150px] h-[200px] rounded-[20px]">
-          <Image src={nope} alt="movie" className="w-full h-full " />
-        </aside>
-        <aside className="w-[150px] h-[200px] rounded-[20px]">
-          <Image src={dreams} alt="movie" className="w-full h-full " />
-        </aside>
+        {movieList?.map((movie) => {
+           console.log(movie.image)
+          return (
+            <aside
+              className="w-[150px] h-[200px] rounded-[20px]"
+              key={movie.id}
+            >
+            
+              <Image src={movie.image} alt="movie" width={100} height={100} className="w-full h-full rounded-[20px]" />
+            </aside>
+          );
+        })} 
       </div>
     </div>
   );
